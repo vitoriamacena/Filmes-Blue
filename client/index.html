@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:family=Roboto:display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><span>Movie</span>Db</h1>
+            <input type="text" placeholder="Busca por ID">
+        </nav>
+    </header>
+
+    <main id="main">
+        <h2 id="msg">ADICIONE OU<span>EDITE UM FILME</span></h2>
+        <form id="form">
+            <div class="form-first">
+                <label for="titulo">Título</label>
+                <input name="titulo" id="titulo" type="text">
+                <label for="nota">Nota</label>
+                <input name="nota" id="nota" type="text">
+                <label for="genero">Gênero</label>
+                <input name="genero" id="genero" type="text">
+            </div>
+            <div class="form-sec">
+                <label for="assistido">Assistido</label>
+                <input name="assistido" id="assistido" type="checkbox">
+                <label for="id">ID</label>
+                <input name="id" id="id" type="text">
+                <label for="imagem">URL da Imagem</label>
+                <input name="imagem" id="imagem" type="text">
+                <button id="btn">SALVAR</button>
+            </div>
+        </form>
+        <div id="movies">
+            
+        </div>
+        
+    </main>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
